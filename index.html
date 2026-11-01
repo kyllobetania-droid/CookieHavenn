@@ -1,0 +1,133 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Cookie Haven - Freshly baked cookies for every occasion.">
+  <title>Cookie Haven | Freshly Baked Happiness</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+  <header class="header">
+    <a href="#home" class="logo">Cookie<span>Haven.</span></a>
+
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#menu">Our Cookies</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <button class="cart-button" id="cartButton">
+      🛒 Cart (<span id="cartCount">0</span>)
+    </button>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-content">
+        <p class="eyebrow">FRESHLY BAKED WITH LOVE</p>
+        <h1>Happiness is<br><span>a warm cookie.</span></h1>
+        <p>
+          Discover delicious cookies made to bring
+          sweetness to your everyday moments.
+        </p>
+        <a href="#menu" class="primary-button">Explore Our Cookies</a>
+      </div>
+
+      <div class="hero-image">
+        <img
+          src="https://images.unsplash.com/photo-1499636136210-6f4ee915583e?w=900"
+          alt="Freshly baked chocolate chip cookies"
+        >
+      </div>
+    </section>
+
+    <section class="menu section" id="menu">
+      <div class="section-heading">
+        <p class="eyebrow">MADE TO MAKE YOU SMILE</p>
+        <h2>Our Cookie Collection</h2>
+        <p>Find your new favorite cookie.</p>
+      </div>
+
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="about section" id="about">
+      <div class="about-image">
+        <img
+          src="https://images.unsplash.com/photo-1555507036-ab1f4038808a?w=900"
+          alt="Fresh bakery pastries"
+        >
+      </div>
+
+      <div class="about-content">
+        <p class="eyebrow">OUR STORY</p>
+        <h2>A Little Sweetness Goes a Long Way.</h2>
+        <p>
+          Welcome to Cookie Haven, a cookie bakery concept
+          created for people who love freshly baked treats.
+          We believe that even a simple cookie can make
+          someone's day better.
+        </p>
+        <p>
+          Our goal is to share delicious cookie varieties
+          and make every visit a sweet experience.
+        </p>
+        <a href="#menu" class="primary-button">View Our Menu</a>
+      </div>
+    </section>
+
+    <section class="cart-section section" id="cart">
+      <div class="section-heading">
+        <p class="eyebrow">YOUR SWEET SELECTION</p>
+        <h2>Shopping Cart</h2>
+        <p>Review your selected cookies.</p>
+      </div>
+
+      <div class="cart-box">
+        <div id="cartItems">
+          Your cart is currently empty.
+        </div>
+
+        <div class="cart-total">
+          Total: <strong id="cartTotal">₱50.00</strong>
+        </div>
+
+        <button class="primary-button" id="orderButton">
+          Place Sample Order
+        </button>
+
+        <p id="orderMessage" aria-live="polite"></p>
+        <p class="cart-note">
+         real payment or Free delivery is processed.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact section" id="contact">
+      <div class="section-heading">
+        <p class="eyebrow">WE'D LOVE TO HEAR FROM YOU</p>
+        <h2>Contact Us</h2>
+        <p>Have a question? Get in touch with Cookie Haven.</p>
+      </div>
+
+      <div class="contact-info">
+        <p>📧 Email: cookiehaven@example.com</p>
+        <p>📍 Location: Cagayan de Oro City, Philippines</p>
+        <p>🍪 Thank you for visiting Cookie Haven!</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <a href="#home" class="logo">Cookie<span>Haven.</span></a>
+    <p>Freshly baked happiness in every bite.</p>
+    <p>© <span id="year"></span> Cookie Haven.</p>
+  </footer>
+
+</body>
+</html>
